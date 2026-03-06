@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: lumen-alpha-bot
+    runtime: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node src/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: ALPHA_VANTAGE_KEY
+        value: 0PB9FKT51UFAPSU5
+      - key: COINGECKO_API
+        value: https://api.coingecko.com/api/v3
+      - key: DGX_ML_API
+        value: http://100.79.93.27:5000
