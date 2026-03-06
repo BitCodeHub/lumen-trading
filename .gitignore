@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.local
+*.log
+.DS_Store
+data/paper-state.json
+data/backtest-results/
+data/historical/
+data/ml-results/
+data/models/
